@@ -1,0 +1,441 @@
+<html>
+<head>
+<title>TestNG:  KTAuto_Sele_Java_Nhom12 - Copy</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>KTAuto_Sele_Java_Nhom12 - Copy</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>9/7/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed May 14 12:46:49 GMT+07:00 2025</td>
+</tr>
+<tr><td>Total time:</td><td>129 seconds (129962 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.BookTicketTest.TC14()'><b>TC14</b><br>Test class: testcases.BookTicketTest<br>Test method: User can book 1 ticket at a time</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with text: Sài Gòn
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:153)
+	at pageObjects.BookTicketPage.selectFromDropdown(BookTicketPage.java:39)
+	at pageObjects.BookTicketPage.bookTicket(BookTicketPage.java:45)
+	at testcases.BookTicketTest.TC14(BookTicketTest.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1593987072", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1593987072'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with text: Sài Gòn
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:153)
+	at pageObjects.BookTicketPage.selectFromDropdown(BookTicketPage.java:39)
+	at pageObjects.BookTicketPage.bookTicket(BookTicketPage.java:45)
+	at testcases.BookTicketTest.TC14(BookTicketTest.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</pre></div></td>
+<td>2</td>
+<td>testcases.BookTicketTest@30ee2816</td></tr>
+<tr>
+<td title='testcases.LoginTest.TC11()'><b>TC11</b><br>Test class: testcases.LoginTest<br>Test method: TC11 - User can't create account while password and PID fields are empty</td>
+<td><div><pre>java.lang.AssertionError: expected [Invalid password length.] but found [Invalid password length]
+	at testcases.LoginTest.TC11(LoginTest.java:131)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1835477972", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1835477972'><pre>java.lang.AssertionError: expected [Invalid password length.] but found [Invalid password length]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at testcases.LoginTest.TC11(LoginTest.java:131)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</pre></div></td>
+<td>1</td>
+<td>testcases.LoginTest@5cee5251</td></tr>
+<tr>
+<td title='testcases.BookTicketTest.TC15()'><b>TC15</b><br>Test class: testcases.BookTicketTest<br>Test method: User Can Open Book Ticket Page From Timetable</td>
+<td><div><pre>java.lang.AssertionError: No &apos;book ticket&apos; link found for the route from Huế to Sài Gòn. Please check if the schedule exists or if the link is available.
+	at testcases.BookTicketTest.TC15(BookTicketTest.java:69)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace927744186", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace927744186'><pre>java.lang.AssertionError: No &apos;book ticket&apos; link found for the route from Huế to Sài Gòn. Please check if the schedule exists or if the link is available.
+	at org.testng.Assert.fail(Assert.java:111)
+	at testcases.BookTicketTest.TC15(BookTicketTest.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</pre></div></td>
+<td>1</td>
+<td>testcases.BookTicketTest@30ee2816</td></tr>
+<tr>
+<td title='testcases.LoginTest.TC09()'><b>TC09</b><br>Test class: testcases.LoginTest<br>Test method: TC09 - User can change password</td>
+<td><div><pre>java.lang.AssertionError: Change Password success message does not match expected [Your password has been updated] but found [Your password has been updated!]
+	at testcases.LoginTest.TC09(LoginTest.java:116)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1005400853", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1005400853'><pre>java.lang.AssertionError: Change Password success message does not match expected [Your password has been updated] but found [Your password has been updated!]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at testcases.LoginTest.TC09(LoginTest.java:116)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</pre></div></td>
+<td>4</td>
+<td>testcases.LoginTest@5cee5251</td></tr>
+<tr>
+<td title='testcases.LoginTest.TC03()'><b>TC03</b><br>Test class: testcases.LoginTest<br>Test method: TC03 - User cannot login with invalid password</td>
+<td><div><pre>java.lang.AssertionError: Error message does not match when attempting to login with invalid password expected [There was a problem with your login and/or errors exist in your form.] but found [Invalid username or password. Please try again.]
+	at testcases.LoginTest.TC03(LoginTest.java:54)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1526062841", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1526062841'><pre>java.lang.AssertionError: Error message does not match when attempting to login with invalid password expected [There was a problem with your login and/or errors exist in your form.] but found [Invalid username or password. Please try again.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at testcases.LoginTest.TC03(LoginTest.java:54)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</pre></div></td>
+<td>1</td>
+<td>testcases.LoginTest@5cee5251</td></tr>
+<tr>
+<td title='testcases.LoginTest.TC05()'><b>TC05</b><br>Test class: testcases.LoginTest<br>Test method: TC05 - System shows message when user enters wrong password several times</td>
+<td><div><pre>java.lang.AssertionError: Error message does not match after 4 failed login attempts expected [You have used 4 out of 5 login attempts. After all 5 have been used, you will be unable to login for 15 minutes.] but found [Invalid username or password. Please try again.]
+	at testcases.LoginTest.TC05(LoginTest.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace756637412", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace756637412'><pre>java.lang.AssertionError: Error message does not match after 4 failed login attempts expected [You have used 4 out of 5 login attempts. After all 5 have been used, you will be unable to login for 15 minutes.] but found [Invalid username or password. Please try again.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at testcases.LoginTest.TC05(LoginTest.java:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</pre></div></td>
+<td>4</td>
+<td>testcases.LoginTest@5cee5251</td></tr>
+<tr>
+<td title='testcases.LoginTest.TC07()'><b>TC07</b><br>Test class: testcases.LoginTest<br>Test method: TC07 - User can create new account</td>
+<td><div><pre>java.lang.AssertionError: Registration success message does not match! expected [Thank you for registering your account] but found [Registration Confirmed! You can now log in to the site.]
+	at testcases.LoginTest.TC07(LoginTest.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1756039478", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1756039478'><pre>java.lang.AssertionError: Registration success message does not match! expected [Thank you for registering your account] but found [Registration Confirmed! You can now log in to the site.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at testcases.LoginTest.TC07(LoginTest.java:95)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</pre></div></td>
+<td>1</td>
+<td>testcases.LoginTest@5cee5251</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.LoginTest.TC06()'><b>TC06</b><br>Test class: testcases.LoginTest<br>Test method: TC06 - Additional pages display once user logged in</td>
+<td></td>
+<td>3</td>
+<td>testcases.LoginTest@5cee5251</td></tr>
+<tr>
+<td title='testcases.LoginTest.TC02()'><b>TC02</b><br>Test class: testcases.LoginTest<br>Test method: TC02 - User cannot login with blank Username textbox</td>
+<td></td>
+<td>1</td>
+<td>testcases.LoginTest@5cee5251</td></tr>
+<tr>
+<td title='testcases.LoginTest.TC08()'><b>TC08</b><br>Test class: testcases.LoginTest<br>Test method: TC08 - User can't login with an account hasn't been activated</td>
+<td></td>
+<td>1</td>
+<td>testcases.LoginTest@5cee5251</td></tr>
+<tr>
+<td title='testcases.ForgotPassWordTest.TC13()'><b>TC13</b><br>Test class: testcases.ForgotPassWordTest<br>Test method: TC13 - Errors display if password and confirm password don't match when resetting password</td>
+<td></td>
+<td>4</td>
+<td>testcases.ForgotPassWordTest@31368b99</td></tr>
+<tr>
+<td title='testcases.LoginTest.TC10()'><b>TC10</b><br>Test class: testcases.LoginTest<br>Test method: TC10 - User can't create account with Confirm password not matching Password</td>
+<td></td>
+<td>1</td>
+<td>testcases.LoginTest@5cee5251</td></tr>
+<tr>
+<td title='testcases.ForgotPassWordTest.TC12()'><b>TC12</b><br>Test class: testcases.ForgotPassWordTest<br>Test method: TC12 - Errors display when password reset token is blank</td>
+<td></td>
+<td>4</td>
+<td>testcases.ForgotPassWordTest@31368b99</td></tr>
+<tr>
+<td title='testcases.BookTicketTest.TC16()'><b>TC16</b><br>Test class: testcases.BookTicketTest<br>Test method: User Can Cancel Ticket</td>
+<td></td>
+<td>31</td>
+<td>testcases.BookTicketTest@30ee2816</td></tr>
+<tr>
+<td title='testcases.LoginTest.TC01()'><b>TC01</b><br>Test class: testcases.LoginTest<br>Test method: TC01 - User can log into Railway with valid username and password</td>
+<td></td>
+<td>2</td>
+<td>testcases.LoginTest@5cee5251</td></tr>
+<tr>
+<td title='testcases.LoginTest.TC04()'><b>TC04</b><br>Test class: testcases.LoginTest<br>Test method: TC04 - Redirect to Login page when un-logged user clicks Book ticket tab</td>
+<td></td>
+<td>1</td>
+<td>testcases.LoginTest@5cee5251</td></tr>
+</table><p>
+</body>
+</html>
